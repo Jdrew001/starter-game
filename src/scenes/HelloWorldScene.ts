@@ -19,7 +19,7 @@ export default class HelloWorldScene extends Phaser.Scene
     create()
     {
         this.add.image(400, 300, 'sky')
-
+ 
         const particles = this.add.particles('red')
 
         const emitter = particles.createEmitter({
@@ -30,7 +30,7 @@ export default class HelloWorldScene extends Phaser.Scene
 
         const logo = this.physics.add.image(400, 100, 'logo')
 
-        logo.setVelocity(100, 200)
+        logo.setVelocity(100, 500)
         logo.setBounce(1, 1)
         logo.setCollideWorldBounds(true)
 
